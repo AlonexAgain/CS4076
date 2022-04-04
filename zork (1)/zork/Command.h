@@ -6,15 +6,14 @@ using namespace std;
 
 class Command {
 private:
-	string commandWord;
-	string secondWord;
+    string commandWord;
+    string secondWord;
 
 public:
-	Command(string firstWord, string secondWord);
-	string getCommandWord();
-	string getSecondWord();
-	bool isUnknown();
-	bool hasSecondWord();
+    Command(const string& firstWord, const string& secondWord);
+    string getCommandWord();
+    string getSecondWord();
+    bool hasSecondWord();
 };
 
 #endif /*COMMAND_H_*/
